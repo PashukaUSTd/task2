@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    block head
+        head
+            meta(charset="UTF-8")
+            meta(http-equiv="X-UA-Compatible" content="IE=edge")
+            meta(name="viewport" content="width=device-width, initial-scale=1.0")
+            title Document
+            link(rel="stylesheet" href="main.css")
+    body
+        block header
+            include header
+        block content
+            h1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. In corporis necessitatibus id, repellat, voluptas reiciendis vero, eaque sapiente exercitationem rem modi tempore quae voluptatibus ipsa itaque consequatur ut maxime amet!
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, repellendus eaque necessitatibus voluptate nesciunt excepturi maxime porro quo, blanditiis sit perspiciatis distinctio quam adipisci corporis dicta molestias, temporibus placeat repudiandae.
+            include (path: images/sprite.svg)
+        block footer
+            include footer
+        block scripts
+            script(src="resources/vendor.js")
